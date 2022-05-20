@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>KM 101 Assignment One</title>
+<link rel="stylesheet" type="text/css" href="assignmentStyle.css" />
+</head>
+
+<body>
+<h1> Knowledge Management 101 </h1>
+
+<h1> Assignment One </h1>
+<h3> Due Date: Wednesday, July 6, 2022, 11:59 PM </h3>
+<h3> Maximum Score: 50 Points </h3>
+
+<input type="file" id="uploadFile" accept=".doc,.docx,.txt,.pdf,image/*" /> <br /><br />
+<input type="submit" value="submit" />
+<form action="upload.php" method="post" enctype="multipart/form-data">
+  Select file to upload:
+  <input type="file" name="fileToUpload" id="fileToUpload">
+  <input type="submit" value="Upload File" name="submit">
+</form>
+
+<h3> Assignment Description </h3>
+<p> Blah Blah Blah </p>
+
+<h3> Assignment Rubric </h3>
+<ul>
+  <li> rubric item 1 </li>
+  <li> rubric item 2 </li>
+  <li> rubric item 3 </li>
+</ul>
+
+
+<script>
+function showContent() {
+  var temp = document.getElementsByTagName("template")[0];
+  var clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+</script>
+
+<script src="uploadDoc.js"></script>
+
+</body>
+</html>
