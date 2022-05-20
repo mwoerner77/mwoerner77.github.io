@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Knowledge Management 101</title>
+<link rel="stylesheet" type="text/css" href="courseLandingStyle.css" />
+</head>
+
+<body>
+<h1>Knowledge Management 101</h1>
+
+<h3>Class Info</h3>
+<p> Instructor: Homer Simpson. homersimpson@uw.edu</p>
+<p> Office Hours: Wednesday 7pm - 8pm</p>
+<p> Lectures: TThu 8 - 10pm, UW1, Room 021</p> 
+<button onclick="showContent()">Show the professor's face</button>
+
+<h3>Course Description</h3>
+<p>Knowledge management theory has emerged as an important field for practice and research in software management. We will study the theories as foundations to provide a rationale for managing knowledge. Students who enrolled in this class should have have already known the definition of knowledge as a resource. This class helps the students use the theoretical reasoning for evaluating the knowledge management process. By the end of this course, the students will master the knowledge management process.</p>
+
+<h3>Syllabus</h3>
+<ul>
+  <li>Introduction To Knowledge Management</li>
+  <li>History of Knowledge Management</li>
+  <li>Research and Dimensions of Knowledge Management</li>
+  <li>Strategies and Motivations of Knowledge Management</li>
+  <li>Knowledge Management Cycle</li>
+  <li>Knowledge Management Models</li>
+  <li>Knowledge Capture and Codification</li>
+  <li>Knowledge Sharing and Communities of Practice </li>
+  <li>Knowledge Use and Applications</li>
+</ul>
+
+<h3>Assignments</h3>
+<button onclick="window.location='./content/assignmentOne.html';">Assignment One</button>
+
+<template>
+  <h2>Professor</h2>
+  <img src="../images/Homer_Simpson.png" width="400" height="660">
+</template>
+
+<script>
+function showContent() {
+  var temp = document.getElementsByTagName("template")[0];
+  var clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+</script>
+
+</body>
+</html>
