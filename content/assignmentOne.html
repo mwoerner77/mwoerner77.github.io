@@ -15,7 +15,7 @@
 
 <div id="filesubmit">
   <input type="file" class="file-select" accept=".doc,.docx,.txt,.pdf,image/*"/>
-  <button class="file-submit">submit</button>
+  <button class="file-submit">Submit</button>
 </div>
 
 <h3> Assignment Description </h3>
@@ -61,8 +61,8 @@ function showContent() {
   const analytics = getAnalytics(app);
   const storageService = firebase.storage();
   const storageRef = storageService.ref();
-  document.querySelector('.file-select).addEventListener('change', handleFileUploadChange);
-  document.querySelector('.file-submit).addEventListener('click', handleFileUploadSubmit);
+  document.querySelector('.file-select).addEventListener('change', handleFileUploadChange));
+  document.querySelector('.file-submit).addEventListener('click', handleFileUploadSubmit));
   
   let selectedFile;
   handleFileUploadChange(e) {
